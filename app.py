@@ -8,14 +8,14 @@ app = Flask(__name__)
 DB_HOST = "127.0.0.1"
 DB_NAME = "logs"
 DB_USER = "rodriczaya"
-DB_PASSWORD = "penguin"
+DB_PASSWORD = "DB_PASSWORD"
 
 def get_db_connection():
     conexion = psycopg2.connect(
         host=DB_HOST,
         dbname=DB_NAME,
         user=DB_USER,
-        password=os.getenv("penguin")
+        password=os.getenv("DB_PASSWORD")
     )
     return conexion
 
