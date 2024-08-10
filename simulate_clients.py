@@ -17,13 +17,13 @@ def generate_log():
         "message": "Este es un mensaje de log."
     }
     response = requests.post(URL, json=log)
-    print(f"Response Status Code: {response.status_code}")
-    print(f"Response Headers: {response.headers}")
-    print(f"Response Text: {response.text}")  # Print the raw response text
-    try:
-        print(f"Response JSON: {response.json()}")  # Try to print the JSON response
-    except ValueError:
-        print("Response is not in JSON format")
+    # print(f"Response Status Code: {response.status_code}")
+    # print(f"Response Headers: {response.headers}")
+    # print(f"Response Text: {response.text}")
+    # try:
+    #     print(f"Response JSON: {response.json()}")
+    # except ValueError:
+    #     print("Response is not in JSON format")
 
 def simulate_client(client_id):
     while True:
